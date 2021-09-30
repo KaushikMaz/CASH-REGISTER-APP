@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASH REGSITER APP</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <section class="section">
+        <h1 class="header">Cash Register Manager</h1>
+        <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.
+        </p>
+        <div class="bill-input">
+        <label for="bill-amount">Bill Amount:</label>
+        <input type="number" id="bill-amount">
+        <button id="next">Next</button>
+        </div>
+
+        <div class="cash-input">
+        <label for="cash-given">Cash Given:</label>
+        <input type="number" id="cash-given">
+        <button id="check-btn">Check</button>
+        </div>
+
+        <div id="output"></div>
+
+        <div class="return-table">
+            
+
+            <table class="table-value">
+                <caption>
+                    
+                    Return change
+
+                </caption>
+
+                <tr>
+                    <th>Note</th>
+                    <th>₹2000</th>
+                    <th>₹500</th>
+                    <th>₹100</th>
+                    <th>₹20</th>
+                    <th>₹10</th>
+                    <th>₹5</th>
+                    <th>₹1</th>
+                    <th>Total notes</th>
+                </tr>
+                
+                <tr>
+                    <th>No. of notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+                
+                
+                
+            </table>
+        </div>
+    </section>
+
+    <script src="/app.js"></script>
+    
+</body>
+</html>
